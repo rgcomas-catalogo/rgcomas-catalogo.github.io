@@ -1,0 +1,72 @@
+
+<header class="header">
+    <div class="header-content">
+        <a href="/" class="header-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+            </svg>
+            Catálogo de Recambios (pagina en pruevas no se ponga en contacto numeros falsos)
+        </a>
+
+        <nav class="header-nav">
+            <a href="/" class="header-nav-link active">Catálogo</a>
+            <a href="#about" class="header-nav-link">Acerca de</a>
+            <a href="#contact" class="header-nav-link">Contacto</a>
+        </nav>
+
+        <div class="header-actions">
+            <div id="auth-buttons">
+                <!-- Authentication buttons will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="login-modal hidden">
+        <div class="login-modal-content">
+            <div class="login-modal-header">
+                <h2 class="login-modal-title">Acceso de Empleado</h2>
+                <p class="login-modal-description">
+                    Ingresa tus credenciales para acceder al panel de administración
+                </p>
+            </div>
+            
+            <div id="login-error" class="login-error hidden"></div>
+            
+            <form id="login-form" class="login-form">
+                <div class="login-form-group">
+                    <label for="username" class="login-form-label">Usuario</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        class="login-form-input"
+                        required
+                        autocomplete="username"
+                    />
+                </div>
+                
+                <div class="login-form-group">
+                    <label for="password" class="login-form-label">Contraseña</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        class="login-form-input"
+                        required
+                        autocomplete="current-password"
+                    />
+                </div>
+                
+                <div class="login-form-actions">
+                    <button type="submit" class="login-form-submit">
+                        Iniciar Sesión
+                    </button>
+                    <button type="button" id="login-cancel" class="login-form-cancel">
+                        Cancelar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
